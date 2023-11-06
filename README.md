@@ -1,11 +1,8 @@
-# ageCalculator
-
-This is a simple age calculator made with pure JavaScript, HTML and CSS. Using this project you can calculate your age.
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center" class="readme-top">
-  <a href="https://agecalculator.vercel.app" >
+  <a href="https://agecalculator-am.vercel.app" >
   
 <h1 align="center">Age Calculator</h1>
   </a>
@@ -14,14 +11,14 @@ This is a simple age calculator made with pure JavaScript, HTML and CSS. Using t
   <p align="center">
     Calculate your age
     <br />
-    <a href="https://github.com/marinaassohoun/colorand"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/marinaassohoun/ageCalculator"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://agecalculator.vercel.app">View app</a>
+    <a href="https://agecalculator-am.vercel.app">View app</a>
   
   </p>
 <p align="center">
-  <img align="center" alt="ageCalculator screenshot" width="500" src="./src/assets/images/agecalculator_screenshot.png" style="padding-right:10px; display:inline-block;" />
+  <img align="center" alt="agecalculator screenshot 1" width="500" src="assets/images/agecalculator_screenshot1.png" style="padding-right:10px; display:inline-block;" /> <img align="center" alt="agecalculator screenshot 2" width="500" src="assets/images/agecalculator_screenshot2.png" style="padding-right:10px; display:inline-block;" /> <img align="center" alt="agecalculator screenshot 3" width="500" src="assets/images/agecalculator_screenshot3.png" style="padding-right:10px; display:inline-block;" /><img align="center" alt="agecalculator screenshot 4" width="500" src="assets/images/agecalculator_screenshot4.png" style="padding-right:10px; display:inline-block;" />
 </p>
 </div>
 
@@ -82,9 +79,10 @@ Project Link: [ageCalculator](https://github.com/marinaassohoun/ageCalculator.gi
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-url]: https://www.linkedin.com/in/marina-assohoun/
-[product-screenshot]: images/screenshot.png
-[product-screenshot1]: images/age-calculator_screenshot-1.png
-[product-video]: [images/age-calculator_screenshot-1.png](https://drive.google.com/file/d/1JHv9M1mUQArghhn3JSUks2pfCrSf7SK4/view?usp=sharing)
+[product-screenshot1]: images/agecalculator_screenshot1.png
+[product-screenshot2]: images/agecalculator_screenshot2.png
+[product-screenshot3]: images/agecalculator_screenshot3.png
+[product-video]: (https://drive.google.com/file/d/1JHv9M1mUQArghhn3JSUks2pfCrSf7SK4/view?usp=sharing)
 
 ---
 
