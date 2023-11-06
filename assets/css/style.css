@@ -1,0 +1,281 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue-zaffre: #4203a9;
+  --jordy-blue: #90bafc;
+  --yellow: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--blue-zaffre), var(--jordy-blue));
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+/* -- begin Main -- */
+.calculator {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding-top: 5%;
+}
+
+.calculator #site-title {
+  font-size: 3rem;
+}
+.calculator #site-title span {
+  color: var(--yellow);
+  border-bottom: 0.2em solid var(--yellow);
+  padding-bottom: 0.2em;
+}
+.input-box {
+  margin: 5em 0;
+  padding: 2em;
+  border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+.input-box input[type="date"] {
+  flex: 1;
+  margin-right: 20px;
+  padding: 14px 20px;
+  border: 0;
+  outline: 0;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  position: relative;
+}
+.input-box button {
+  background: var(--yellow);
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--blue-zaffre);
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100% - 10px);
+  background-size: 1.7em;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  cursor: pointer;
+}
+input[type="date"]::-webkit-datetime-edit {
+  font-size: 1.4rem;
+  color: var(--blue-zaffre);
+  font-weight: bold;
+}
+
+.display {
+  margin-bottom: 1em;
+}
+/* -- begin result -- */
+.age-result {
+  margin: 5em 0;
+  padding: 2em;
+  border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.3);
+}
+#result {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#result span {
+  color: var(--yellow);
+  font-weight: bold;
+}
+#result .hand {
+  animation: pointing-fingers 1s infinite;
+  display: inline-block;
+}
+@keyframes pointing-fingers {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20%);
+  }
+}
+/* --  end result -- */
+/* -- begin birthdayWish-popup -- */
+.main-container #birthdayWish-popup {
+  margin: 1em;
+  padding: 20px;
+  border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  text-align: center;
+}
+#birthdayWish-popup .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.popup .popup-header h2 {
+  margin-top: 0;
+  color: var(--blue-zaffre);
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 2.5rem;
+  animation: color 1s ease-in-out;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    blue 0%,
+    green 29%,
+    red 67%,
+    var(--yellow) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.popup .close-popup {
+  text-align: end;
+  width: 100%;
+  margin-right: 1em;
+  transition: all 200ms;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  z-index: 2;
+}
+.popup .close-popup:hover {
+  color: #06d85f;
+}
+.hide {
+  display: none;
+}
+#cake {
+  font-size: 9rem;
+  text-shadow: 0.1em 0.05em 0.2em rgba(0, 0, 0, 0.9);
+  animation: cake-move 2s infinite;
+  display: inline-block;
+  margin: 0.5em 0;
+}
+@keyframes cake-move {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10%);
+  }
+}
+
+/* -- end birthdayWish-popup -- */
+/* -- end Main-- */
+
+/* begin Footer */
+
+.attribution p {
+  margin: 0.5em;
+}
+.attribution {
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue-zaffre);
+}
+.attribution a:hover {
+  color: var(--jordy-blue);
+}
+/* end Footer */
+
+@media screen and (max-width: 680px) {
+  /* -- begin Main  -- */
+  .calculator #site-title {
+    font-size: 2.5rem;
+  }
+  .input-box {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .input-box input[type="date"] {
+    width: 100%;
+    margin-right: 0;
+  }
+  input[type="date"]::-webkit-datetime-edit {
+    font-size: 0.9rem;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-size: 1.2em;
+  }
+  /* -- begin birthdayWish-popup  -- */
+  .popup .close-popup {
+    font-size: 1.5rem;
+  }
+  .popup .popup-header h2 {
+    font-size: 1.5rem;
+  }
+  #cake {
+    font-size: 5rem;
+  }
+  .popup-content #result {
+    font-size: 1rem;
+  }
+  /* -- end birthdayWish-popup  -- */
+  /* -- end Main  -- */
+  /* -- begin Footer  -- */
+  .attribution {
+    font-size: 1rem;
+    /* -- end Footer -- */
+  }
+}
